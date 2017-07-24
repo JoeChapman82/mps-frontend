@@ -1,0 +1,31 @@
+{
+  "name": "mps-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for retrieving data through mock payment service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Chapman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "browser-sync": "^2.18.12",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "express-nunjucks": "^2.2.3",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-flatten": "^0.3.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "helmet": "^3.6.1",
+    "node-sass": "^4.5.3",
+    "nunjucks": "^3.0.0",
+    "path": "^0.12.7",
+    "pump": "^1.0.2",
+    "request": "^2.81.0",
+    "run-sequence": "^1.2.2"
+  }
+}

@@ -1,0 +1,27 @@
+table,
+ tr,
+  th,
+   td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    padding: .25rem;
+}
+
+tr:nth-of-type(even) {
+    background-color: rgba(189,189,189, 1);
+}
+
+th {
+    background-color: grey;
+}
+
+th:hover {
+    background-color: $hover-colour;
+    cursor: pointer;
+}
+
+.data-table {
+    width: 800px;
+    margin: 2rem auto;
+}

@@ -1,0 +1,22 @@
+{% extends "nunjucks/templates/template.njk" %}
+{% block body %}
+<h1 class="center-heading">Request database details</h1>
+<form action="/" method="post">
+
+    <label for="id">Claimant ID</label>
+    <input id="id" type="text" name="id" value="">
+    <button class="request-button" data-query="all" type="button" name="all">Request all</button>
+    <button class="request-button" data-query="id" type="button" name="byId">Request by ID</button>
+    <button class="request-button" data-query="another" type="button" name="another">Something else</button>
+</form>
+
+{# Loading widget to use if necessary #}
+<div class="canvas-wrapper">
+    <canvas id="loadingCanvas" class="hidden" width="300" height="300"></canvas>
+</div>
+
+{# Data table inserted here from ajax request #}
+<div id="tableWrapper">
+
+</div>
+{% endblock %}

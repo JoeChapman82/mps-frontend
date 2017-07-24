@@ -1,0 +1,24 @@
+{% if error %}
+    <p>Error received from API</p>
+    <p>{{ error.statusCode }}</p>
+    <p>{{ error.message }}</p>
+{% else %}
+    <table class="data-table">
+        <thead>
+            <tr>
+                {% for key, value in response[0] %}
+                    <th>{{ key }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+        {% for item in response %}
+            <tr>
+                {% for key, value in item %}
+                    <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+{% endif %}
